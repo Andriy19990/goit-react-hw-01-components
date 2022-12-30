@@ -5,9 +5,10 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
     <div className = {css.profile}>
             <div className={css.description}>
-                <img scr={avatar}
+                <img className={css.avatar}
+                    src={avatar}
                     alt="User avatar"
-                    className={css.avatar}
+                    
                 />
                 <p className={css.name}>{username}</p>
                 <p className={css.tag}>{tag}</p>
@@ -35,7 +36,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
-  stats: PropTypes.exact({
+  stats: PropTypes.shape({
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes:PropTypes.number.isRequired,

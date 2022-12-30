@@ -1,0 +1,29 @@
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.statList {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    border: 1px solid hotpink;
+    margin-bottom: 50px;
+}
+
+.label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.percentage{
+    font-size: 20px;
+    font-weight: bold;
+}
+
